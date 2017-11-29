@@ -6,7 +6,7 @@ namespace LightningFastWordFinder
 {
     class Program
     {
-        static string name = "YOUR NAME";
+        static string name = "Gabee";
         static int numOfRuns = 1000;
 
         static double RunParserPerformanceTests(string text)
@@ -38,6 +38,7 @@ namespace LightningFastWordFinder
 
         static void Main(string[] args)
         {
+
             string text = File.ReadAllText("history-of-egypt-chaldea-syria-babylonia-assyria.txt");
             Console.WriteLine("Text length: " + text.Length);
             double avgRuntime = RunParserPerformanceTests(text);

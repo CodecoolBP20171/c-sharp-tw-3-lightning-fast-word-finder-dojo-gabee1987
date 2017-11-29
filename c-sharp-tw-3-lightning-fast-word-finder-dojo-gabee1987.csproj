@@ -1,0 +1,108 @@
+﻿<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProjectGuid>{6AB6FD2E-5126-45FD-8D3F-497CAD3AA16B}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <NoStandardLibraries>false</NoStandardLibraries>
+    <AssemblyName>ConsoleApplication</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>Client</TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup>
+    <RootNamespace>c_sharp_tw_3_lightning_fast_word_finder_dojo_gabee1987</RootNamespace>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include=".gitignore" />
+    <Content Include="LightningFastWordFinder\LightningFastWordFinder.csproj" />
+    <Content Include="LightningFastWordFinder\LightningFastWordFinder.csproj.user" />
+    <Content Include="txt\history-of-egypt-chaldea-syria-babylonia-assyria.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include=".git\config" />
+    <None Include=".git\description" />
+    <None Include=".git\HEAD" />
+    <None Include=".git\hooks\applypatch-msg.sample" />
+    <None Include=".git\hooks\commit-msg.sample" />
+    <None Include=".git\hooks\post-update.sample" />
+    <None Include=".git\hooks\pre-applypatch.sample" />
+    <None Include=".git\hooks\pre-commit.sample" />
+    <None Include=".git\hooks\pre-push.sample" />
+    <None Include=".git\hooks\pre-rebase.sample" />
+    <None Include=".git\hooks\pre-receive.sample" />
+    <None Include=".git\hooks\prepare-commit-msg.sample" />
+    <None Include=".git\hooks\update.sample" />
+    <None Include=".git\index" />
+    <None Include=".git\info\exclude" />
+    <None Include=".git\logs\HEAD" />
+    <None Include=".git\logs\refs\heads\master" />
+    <None Include=".git\logs\refs\remotes\origin\HEAD" />
+    <None Include=".git\objects\15\cef7562e88f935f52be8ccee125b5ead2205fa" />
+    <None Include=".git\objects\17\4f9de5c37175925401d15c1fb42b04f01f7b31" />
+    <None Include=".git\objects\2b\f0b9725b3d97bfce2986b796da2592ba25fb42" />
+    <None Include=".git\objects\30\ca4a805c8afb32c839951f7c9d8d87a625f446" />
+    <None Include=".git\objects\3d\a35fab290324912acce30b3307de8ccb5546d6" />
+    <None Include=".git\objects\3f\bfeb9fe66d21572295d4dff38b34463b80e280" />
+    <None Include=".git\objects\48\85bf7babad3b27f2873c6107eac100a962fdb7" />
+    <None Include=".git\objects\4d\82322bf2b47d1a85d9e8b654b23866f4229383" />
+    <None Include=".git\objects\52\d641eaf721c8251122f1f447d1660342533879" />
+    <None Include=".git\objects\68\88ce66af310978114a1e91c99dc9bc74ccaec9" />
+    <None Include=".git\objects\70\33d1e98939fad887034b22d153dca07379dea3" />
+    <None Include=".git\objects\71\0a5bf3c6421bcdebad8e43b8a9252cd7df515e" />
+    <None Include=".git\objects\7b\c46efa0ecd1b53cdffb2e1a73c336c1f4ab3dc" />
+    <None Include=".git\objects\88\fa4027bda397de6bf19f0940e5dd6026c877f9" />
+    <None Include=".git\objects\8b\24c4296aadb1e70e33a4d474ea8aeba1c42569" />
+    <None Include=".git\objects\96\4061a3012db8e55eef17ae367477d95bc741f1" />
+    <None Include=".git\objects\a6\674d6c5d3d5eb2481ba13bb4a0392ccaef7ea0" />
+    <None Include=".git\objects\c6\e49efc9762d23f0ced4a10e1e39aae3048ae62" />
+    <None Include=".git\objects\d4\e0062209a9df3ab808922b39086439378ff5c1" />
+    <None Include=".git\packed-refs" />
+    <None Include=".git\refs\heads\master" />
+    <None Include=".git\refs\remotes\origin\HEAD" />
+    <None Include="LightningFastWordFinder\App.config" />
+    <None Include="LightningFastWordFinder\LightningFastWordFinder.exe.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="LightningFastWordFinder\LightningWordFinder.cs" />
+    <Compile Include="LightningFastWordFinder\Program.cs" />
+    <Compile Include="LightningFastWordFinder\Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include=".git\objects\info\" />
+    <Folder Include=".git\objects\pack\" />
+    <Folder Include=".git\refs\tags\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSHARP.Targets" />
+  <ProjectExtensions>
+    <VisualStudio AllowExistingFolder="true" />
+  </ProjectExtensions>
+</Project>
