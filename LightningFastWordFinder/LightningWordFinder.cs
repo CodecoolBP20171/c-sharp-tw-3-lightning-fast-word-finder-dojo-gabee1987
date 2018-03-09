@@ -48,6 +48,39 @@ namespace LightningFastWordFinder
             #region Solution 3
 
             // Solution 3
+            //string longestString = "";
+            //int charCounter = 0;
+            //int maxValue = 0;
+            //int indexCounter = 0;
+            //int indexOfLongest = 0;
+            //foreach (char ch in text)
+            //{
+            //    if (ch >= 'a' && ch <= 'z' || ch >= 'A' && ch <= 'Z')
+            //    {
+            //        charCounter += 1;
+            //    }
+            //    else
+            //    {
+            //        if (charCounter >= maxValue)
+            //        {
+            //            maxValue = charCounter;
+            //            indexOfLongest = indexCounter - maxValue;
+            //        }
+            //        charCounter = 0;
+            //    }
+            //    indexCounter += 1;
+            //}
+            //longestString = text.Substring(indexOfLongest, maxValue);
+            //return longestString;
+
+            // Avarage runtime: 7,1186066
+
+            #endregion
+
+            #region Solution 4
+
+            Solution 4
+            string tempString = "";
             string longestString = "";
             int charCounter = 0;
             int maxValue = 0;
@@ -58,6 +91,7 @@ namespace LightningFastWordFinder
                 if (ch >= 'a' && ch <= 'z' || ch >= 'A' && ch <= 'Z')
                 {
                     charCounter += 1;
+                    tempString += ch;
                 }
                 else
                 {
@@ -65,17 +99,56 @@ namespace LightningFastWordFinder
                     {
                         maxValue = charCounter;
                         indexOfLongest = indexCounter - maxValue;
+                        longestString = tempString;
                     }
                     charCounter = 0;
+                    tempString = "";
                 }
                 indexCounter += 1;
             }
             longestString = text.Substring(indexOfLongest, maxValue);
+            Avarage runtime: 25,1186066
             return longestString;
 
-            // Avarage runtime: 7,1186066
+            #endregion
+
+            #region Solution 4
+
+            //string longestString = "";
+            //int charCounter = 0;
+            //int maxValue = 0;
+            //int indexCounter = 0;
+            //int indexOfLongest = 0;
+
+            //int stringLength = text.Length;
+
+            //for (int i = 0; i < stringLength; i++)
+            //{
+            //    if (text[i] >= 'a' && text[i] <= 'z' || text[i] >= 'A' && text[i] <= 'Z')
+            //    {
+            //        charCounter++;
+
+            //    }
+            //    else
+            //    {
+            //        if (charCounter >= maxValue)
+            //        {
+            //            maxValue = charCounter;
+            //            indexOfLongest = indexCounter - maxValue;
+
+            //        }
+            //        charCounter = 0;
+
+            //    }
+            //    indexCounter++;
+            //}
+            //longestString = text.Substring(indexOfLongest, maxValue);
+            //return longestString;
+
+            // Avarage runtime: 7,1613195
 
             #endregion
+
         }
     }
 }
